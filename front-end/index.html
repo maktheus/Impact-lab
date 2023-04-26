@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Processamento de imagem</title>
+        <link rel="stylesheet" href="./index.css">
+        <script src="./index.js"></script>
+    </head>
+
+    <body>
+        <h1>Processamento de imagem</h1>
+        <form>
+          <label for="imagem">Selecione uma imagem:</label>
+          <input type="file" id="imagem" name="imagem" onchange="carregarImagem()">
+        </form>
+        <br>
+        <button onclick="aplicarFiltro()">Aplicar filtro de escala de cinza</button>
+        <br>
+        <br>
+        <img id="imagem-processada">
+    </body>
+</html>
